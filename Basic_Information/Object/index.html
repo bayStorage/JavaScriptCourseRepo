@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+
+        var ali = {
+            ad: 'Ali',
+            soyad: 'Yılmaz',
+            cinsiyet: 'Erkek',
+            telefon: '05362544878',
+            adres: 'İzmit Kocaeli',
+            meslek: 'bilgisayar müh.',
+            diller: ['ingilizce', 'almanca'],
+            hobiler: ['sinema', 'spor', 'kitap okumak']
+        };
+
+        console.log(ali.diller.length);
+
+        ali.hobiler.forEach(function (hobi) {
+            console.log(hobi);
+        });
+
+        var personel = [
+
+            {
+                ad: 'Ali',
+                soyad: 'Yılmaz',
+                cinsiyet: 'Erkek',
+                telefon: '05369994878',
+                adres: 'İzmit Kocaeli',
+                meslek: 'bilgisayar müh.',
+                diller: ['ingilizce', 'almanca'],
+                hobiler: ['sinema', 'spor', 'kitap okumak']
+            },
+
+            {
+                ad: 'Mehmet',
+                soyad: 'Yılmaz',
+                cinsiyet: 'Erkek',
+                telefon: '05376744878',
+                adres: 'İzmit Kocaeli',
+                meslek: 'Elektrik müh.',
+                diller: ['ingilizce', 'almanca'],
+                hobiler: ['sinema', 'spor', 'kitap okumak']
+            },
+
+            {
+                ad: 'Pınar',
+                soyad: 'Yılmaz',
+                cinsiyet: 'Kadın',
+                telefon: '05363454878',
+                adres: 'İzmit Kocaeli',
+                meslek: 'Personel Müdürü',
+                diller: ['ingilizce', 'almanca', 'Fransızca'],
+                hobiler: ['sinema', 'spor', 'kitap okumak']
+            }
+
+
+        ];
+
+        personel.forEach(function (personel) {
+            console.log('*************************************')
+
+
+            console.log(personel.ad + ' ' + personel.soyad);
+
+            personel.diller.forEach(function (dil) {
+                console.log(dil)
+            });
+            console.log('*************************************')
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
